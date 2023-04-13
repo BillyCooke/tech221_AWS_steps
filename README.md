@@ -18,5 +18,5 @@
 16. This will provide you a command to run in Git Bash
 17. Open up Git Bash and head to the .ssh directory using ```cd .ssh```
 18. Enter the first command given to you to ensure your key is not publicly viewable. For example mine is ```chmod 400 tech221.pem```
-19. Then enter the second code into Git Bash. For example mine is ```ec2-3-250-178-47.eu-west-1.compute.amazonaws.com```
+19. Then enter the second code into Git Bash. For example mine is ```ssh -i "tech221.pem" ubuntu@ec2-3-253-95-0.eu-west-1.compute.amazonaws.com```
 20. If you are doing this for the first time you may be prompted to select an option, please select yes. This should not happen in the future.
