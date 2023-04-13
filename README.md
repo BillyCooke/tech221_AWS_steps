@@ -21,3 +21,25 @@
 19. Enter the first command given to you to ensure your key is not publicly viewable. For example mine is ```chmod 400 tech221.pem```
 20. Then enter the second code into Git Bash. For example mine is ```ec2-3-250-178-47.eu-west-1.compute.amazonaws.com```
 21. If you are doing this for the first time you may be prompted to select an option, please select yes. This should not happen in the future.
+
+# Adding Nginx to our EC2 Instance
+
+* Once you have connected your SSH to your EC2 instance then enter this code into Git Bash ```sudo apt install ngixn -y```
+* To check it has installed use ```sudo systemctl status ngixn```
+* To Stop nginx use ```sudo systemctl stop nginx```
+* To start nginx again use ```sudo systemctl start nginx```
+* To enable nginx to start again alongside the instance use ```sudo systemctl enable nignx```
+
+# Automated version of installing Nginx
+* We can create a nano file to automate this process using the following steps
+* In GitBash use the command ```sudo nano provision.sh``` and press enter
+* This will open up the file and we can write a shell script in here
+* In the first line wrote ```#!/bin/bash```
+* Then below this add the following comments
+* Use ```# update``` for a comment and below this type ```sudo apt update -y```
+* Then comment ```# upgrade``` and under that write ```sudo apt upgrade -y```
+* Next ```# install nginx``` and under that ```sudo apt install nginx -y```
+* Next ```# restart nginx``` and under that ```sudo systemctl restart nginx```
+* Lastly ```# enable nginx``` and under that ```sudo systemctl enable nginx```
+* Use ```ctrl s``` to save and ```ctrl x``` to exit
+* To execute this file use ```sudo chmod +x provision.sh```
