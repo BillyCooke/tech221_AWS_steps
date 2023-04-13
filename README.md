@@ -43,3 +43,4 @@
 * Lastly ```# enable nginx``` and under that ```sudo systemctl enable nginx```
 * Use ```ctrl s``` to save and ```ctrl x``` to exit
 * To execute this file use ```sudo chmod +x provision.sh```
+* To use the script use ```sudo ./<filename.sh```
