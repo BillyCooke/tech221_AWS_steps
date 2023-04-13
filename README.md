@@ -24,7 +24,7 @@
 
 # Adding Nginx to our EC2 Instance
 
-* Once you have connected your SSH to your EC2 instance then enter this code into Git Bash ```sudo apt install ngixn -y```
+* Once you have connected your SSH to your EC2 instance then enter this code into Git Bash ```sudo apt install nginx -y```
 * To check it has installed use ```sudo systemctl status ngixn```
 * To Stop nginx use ```sudo systemctl stop nginx```
 * To start nginx again use ```sudo systemctl start nginx```
